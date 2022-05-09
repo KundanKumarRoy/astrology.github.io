@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ************************ Root Class **************************/
+:root{
+	--color-black: #333333;
+	--color-orange: #ff6f00;
+	--color-blk: #777;
+	--color-anchor: #fff;
+}
+ 
+/* ******************** Global class start ********************* */
+body{
+	color: #777777;
+	font-family: 'Philosopher', sans-serif;
+	overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-black);
+	font-family: 'Philosopher', sans-serif;
+}
+.color-b{
+	color: var(--color-blk);
+}
+.color-global{
+	color: var(--color-orange);
+}
+.bg-global{
+	background-color: var(--color-orange);
+}
+.color-a{
+	color: var(--color-anchor);
+}
+.sec-pd{
+	padding: 40px 0;
+	
+}
+
+/* ******************** Global Class End ********************* */
+/* *************** Header section ******************** */
+.contact-details ul li a:hover{
+	color: var(--color-orange);
+}
+.auther-panel ul li a:hover{
+	color: var(--color-orange);
+}
+/* ******************** Search Icon-style **************** */
+.form-drop-menu{
+	display: flex;
+	position: relative;
+}
+.header-form{
+	position: absolute;
+	top: 30px;
+	right: -4px;
+	z-index: 100;
+	display: none;
+	width: 250px;
+	box-shadow: 0px 0px 18px 0px rgb(4 4 4 / 30%);
+    transition: all .3s ease;
+}
+.form-drop-menu:hover .header-form{
+	display: inline-block;
+}
+.form-drop-menu form{
+	background-color: var(--color-anchor);
+	border-radius: 50px;
+	padding: 10px 20px;
+}
+.header-form input{
+	border: none;
+	outline: none;	
+	background: transparent;
+	padding-left: 10px;
+	
+}
+.inner-box{
+	border: 1px solid var(--color-orange);
+	border-radius: 50px;
+
+}
+/* *************** Header section******************** */
+
+/* **************** Navbar Style******************** */
+.nav-link{
+	color: var(--color-anchor);
+	font-family: 'Philosopher', sans-serif;
+	transition: all 0.5s ease-in-out;
+	padding: 10px 15px!important;
+}
+.nav-link:hover{
+	background-color: var(--color-orange);
+	color: var(--color-anchor);
+}
+.navbar{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	
+}
+/* ********************* Sticky Cllasses ********************* */
+
+.sticky{
+	position: fixed;
+	top: 0!important;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: rgba(0,0,0,1);
+	box-shadow: 0 13px 35px -12px rgba(61,82,96,.2);
+	animation: stickyMenu 0.75s ease-in-out;
+}
+@keyframes stickyMenu{
+	0%{
+		margin-top: -120px;
+		opacity: 0;
+	}
+	50%{
+		margin-top: -64px;
+		opacity: 0;
+	}
+	100%{
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+
+/* ******************** Home section Start ******************* */
+.hero{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../image/heros.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+ .welcome-intro .intro-heading h1{
+	 font-size: 60px;
+
+
+ }
+ .intro-heading ul li{
+	 font-size: 24px;
+	 color: var(--color-anchor);
+ }
+.make-it:hover{
+	background-color: transparent;
+	border: 1px solid var(--color-orange);
+	color: var(--color-orange);
+	
+}
+/* ******************** Home section End ******************* */
+
+ /* ********************** Horoscope  style start ********************  */
+ .img-box{
+	 display: inline-block;
+	 width: 100px;
+	 height: 100px;
+	 border-radius:50px ;
+	 background-color: #e4e1e1;
+	 transition: all 0.5s ease-in-out;
+ }
+ .img-box img{
+	width: 50%;
+	height: 50%;
+	align-items: center;
+	margin: 20px auto;
+	
+ }
+ .hososcope-content {
+	 background-color: #f4f4f4;
+ }
+ .horoscope-box:hover h4{
+	color: var(--color-orange);
+}
+.horoscope-box:hover .img-box{
+	background-color: var(--color-orange);
+	box-shadow: 0px 10px 15px -10px #777777;
+}
+.horoscope-box:hover{
+	box-shadow: 0px 10px 15px -10px #777777;
+}
+
+ /* ********************** Horoscope  End ********************  */
+/* .ast_service_box :hover{
+	box-shadow: 0px 10px 15px -10px #777777;
+} */
+ /* ********************** Horoscope  Search Box style Start ********************  */
+.hero-1{
+width: 100%;
+object-fit: contain;
+background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../image/breadcrumb_bg.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.ast_btn {
+    display: inline-block;
+	width: 100%;
+    height: 43px;
+    line-height: 43px;
+    padding: 0px 20px;
+    min-width: 130px;
+    background-color: #ff6f00;
+    color: #ffffff;
+    text-transform: capitalize;
+    border: 1px solid #ff6f00;
+    border-radius: 3px;
+    text-align: center;
+	text-decoration: none;
+    transition: all 0.5s;
+}
+.horoscope-search-box input,.horoscope-search-box select{
+	margin-bottom: 12px;
+	
+}
+.ast_btn:hover{
+	background-color: transparent;
+	border: 1px solid var(--color-orange);
+	color: var(--color-orange);
+}
+
+ /* ********************** Horoscope  Search Box style End ********************  */
+/* service box */
+.ast_service_box img{
+	border: 4px solid gray;
+	padding: 5px;
+}
+.ast_service_box {
+	border: 1px solid gray;
+	margin-right: 5px;
+}
+/* ********************** footer-content style start ****************** */
+.footer-content ul li{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-right: 10px;
+	background-color: #777777;
+	
+}
+.footer-content ul li a{
+	color: #fff;
+}
+.footer-content ul li:hover{
+	background-color: var(--color-orange);
+}
+
+/* ****************** Footer letter ******************** */
+.footer-letter-title:after{
+	content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 70px;
+    background-color: #ff6f00;
+    height: 2px;
+}
+.footer-letter-title{
+
+width: 100%;
+margin-top: 0px;
+margin-bottom: 25px;
+font-size: 20px;
+color: #ffffff;
+text-transform: capitalize;
+position: relative;
+padding-bottom: 15px;
+}
+.footer-newsletter-box input{
+	border:none;
+	padding: 10px;
+	outline: none;
+	background-color: transparent;
+}
+.footer-newsletter-box,.footer-newsletter-box button{
+	border: 1px solid var(--color-anchor);
+	border-radius: 5px;
+}
+.footer-newsletter-box button{
+	background-color: transparent;
+}
+input:focus{
+	background-color: transparent!important;
+	box-shadow: none!important;
+}
+.footer-newsletter-box button:hover{
+	background-color: var(--color-orange);
+	color: var(--color-anchor);
+	border: 1px solid var(--color-orange);
+	
+}
+/* ********************footer-service-link***************** */
+.footer-service-link ul li{
+	list-style: none;
+}
+.footer-service-link ul li a{
+	float: left;
+    width: 100%;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 5px 0px 7px 0px;
+    border-bottom: 1px solid #444444;
+    transition: all 0.5s;
+	text-decoration: none;
+}
+.coyright-section{
+	border-top: 1px dotted #fff;
+	padding-top: 20px;
+	margin: 20px;
+}
+/* ********************** footer-content style start ****************** */
